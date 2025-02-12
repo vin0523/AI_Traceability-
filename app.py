@@ -84,5 +84,3 @@ if uploaded_file:
         prediction_insights['Predicted Status'].value_counts().plot(kind='bar', ax=ax, color=["green", "red"])
         ax.set_title("Prediction Results (Pass vs Fail)")
         st.pyplot(fig)
-
-
