@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 # Function to generate synthetic data with a specified number of records
-def generate_synthetic_data(num_tests=100):
+def generate_synthetic_data(num_tests=1000):
     data = {
         'Requirement ID': [f"REQ-{i % 20 + 1}" for i in range(num_tests)],  # Repeating requirements
         'Test Case ID': [f"TC-{i + 1}" for i in range(num_tests)],  # Sequential Test Case IDs
@@ -22,7 +22,7 @@ def generate_synthetic_data(num_tests=100):
     return df
 
 # Generate synthetic dataset with 100 rows
-df_synthetic = generate_synthetic_data(100)
+df_synthetic = generate_synthetic_data(1000)
 
 # Display the first few rows of the synthetic dataset
 print(df_synthetic.head())
